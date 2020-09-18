@@ -1,0 +1,30 @@
+[submodule "nova"]
+	path = nova
+	url = https://github.com/openstack/nova.git
+[submodule "cinder"]
+	path = cinder
+	url = https://github.com/openstack/cinder.git
+[submodule "glance"]
+	path = glance
+	url = https://github.com/openstack/glance.git
+[submodule "heat"]
+	path = heat
+	url = https://github.com/openstack/heat.git
+[submodule "horizon"]
+	path = horizon
+	url = https://github.com/openstack/horizon.git
+[submodule "ironic"]
+	path = ironic
+	url = https://github.com/openstack/ironic.git
+[submodule "keystone"]
+	path = keystone
+	url = https://github.com/openstack/keystone.git
+[submodule "neutron"]
+	path = neutron
+	url = https://github.com/openstack/neutron.git
+[submodule "placement"]
+	path = placement
+	url = https://github.com/openstack/placement.git
+[submodule "swift"]
+	path = swift
+	url = https://github.com/openstack/swift.git
