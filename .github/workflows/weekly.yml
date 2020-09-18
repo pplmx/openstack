@@ -2,6 +2,7 @@ name: SYNC for OpenStack
 
 # weekly job
 on:
+    # for manually trigger
     workflow_dispatch:
     schedule:
         -
@@ -30,6 +31,5 @@ jobs:
                 name: Syncing
                 run: |
                     git submodule foreach --recursive git pull --rebase --prune
-                    git add -a
-                    git commit -m "Sync from Openstack Github Source"
+                    git commit -am "Sync from Openstack Github Source"
                     git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to commit"
