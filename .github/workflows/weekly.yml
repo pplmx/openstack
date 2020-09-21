@@ -30,6 +30,8 @@ jobs:
             -
                 name: Syncing
                 run: |
+                    git submodule update --init --remote --recursive --jobs 9
+                    git submodule foreach git checkout master
                     git submodule foreach --recursive git pull --rebase --prune
                     git commit -am "Sync from Openstack Github Source"
                     git push https://${{github.actor}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.repository}}.git HEAD:${{ github.ref }} || echo "No changes to commit"
