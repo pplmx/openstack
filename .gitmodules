@@ -28,3 +28,12 @@
 [submodule "swift"]
 	path = swift
 	url = https://github.com/openstack/swift.git
+[submodule "openstack-ansible"]
+	path = openstack-ansible
+	url = https://github.com/openstack/openstack-ansible
+[submodule "kolla-ansible"]
+	path = kolla-ansible
+	url = https://github.com/openstack/kolla-ansible
+[submodule "kolla"]
+	path = kolla
+	url = https://github.com/openstack/kolla
